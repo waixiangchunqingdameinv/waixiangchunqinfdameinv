@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md fixed-top" style="background-color: rgb(255, 255, 255);">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">楸楸的个人网页</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 4rem;">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: rgb(160, 226, 235);">个人介绍</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: rgb(160, 226, 235);">教育背景</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: rgb(160, 226, 235);">旅游日记</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:  rgb(160, 226, 235);">兴趣爱好</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:  rgb(160, 226, 235);">联系方式</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <header class="header">
+    <!-- 轮播 -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- 指示符 -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- 轮播图片 -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/bj1.png" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="images/bj2.png" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="images/bj3.png" class="d-block" style="width:100%">
+        </div>
+      </div>
+
+      <!-- 左右切换按钮 -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="row">
+    <aside class="asidebar col-sm-3 mt-3">
+      <div class="card">
+        <img class="card-img-top p-4" src="images/tx.png" alt="Card image " style="width:100% ;">
+        <div class="card-body">
+          <h4 class="card-title">楸楸</h4>
+          <p class="card-text">知不足而奋进，望远山而前行</p>
+          <a href="#" class="btn btn-danger">点赞</a>
+        </div>
+      </div>
+    </aside>
+    <section class="col-sm-9 mt-3">
+      <div class="card md-3">
+        <div class="card-header">教育背景</div>
+        <div class="card-body">
+          <div class="list-group list-group-checkable">
+            <label class="list-group-item py-3" for="listGroupCheckableRadios1">
+              小学
+              <span class="d-block small opacity-50">2011-2020 ...小学</span>
+            </label>
+
+            <label class="list-group-item py-3" for="listGroupCheckableRadios1">
+              中学
+              <span class="d-block small opacity-50">2020-2023 ...高中</span>
+            </label>
+
+            <label class="list-group-item py-3" for="listGroupCheckableRadios1">
+              大专
+              <span class="d-block small opacity-50">2023-2026 ...大专</span>
+            </label>
+
+            <label class="list-group-item py-3" for="listGroupCheckableRadios1">
+              实习
+              <span class="d-block small opacity-50">2026-至今</span>
+            </label>
+
+          </div>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-header">旅游日记</div>
+        <div class=" row p-4">
+          <div class="col-sm-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#myModal1">
+              <img src="images/lb1.png" width="80%">
+            </a>
+            <div class="modal" id="myModal1">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+
+                  <!-- 模态框头部 -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">2021 上海</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- 模态框内容 -->
+                  <div class="modal-body">
+                    <img src="images/lb1.png" width="80%">
+                  </div>
+
+                  <!-- 模态框底部 -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-sm-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#myModal2">
+              <img src="images/lb2.png" width="80%">
+            </a>
+            <div class="modal" id="myModal2">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+
+                  <!-- 模态框头部 -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">2023  深圳</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- 模态框内容 -->
+                  <div class="modal-body">
+                    <img src="images/lb2.png" width="80%">
+                  </div>
+
+                  <!-- 模态框底部 -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-sm-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#myModal3">
+              <img src="images/lb3.png" width="80%">
+            </a>
+            <div class="modal" id="myModal3">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+
+                  <!-- 模态框头部 -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">2025 香港</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- 模态框内容 -->
+                  <div class="modal-body">
+                    <img src="images/lb3.png" width="80%">
+                  </div>
+
+                  <!-- 模态框底部 -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+          
+    
+                
+          
+        </div>
+      </div>
+
+
+      
+      </div>
+    </section>
+    </div>
+
+  </main>
+  <footer class="footer bg-dark text-light p-5 text-center"> 联系方式：地址：12345679879</footer>
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
